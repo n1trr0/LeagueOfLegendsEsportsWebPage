@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f1519;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tournament-bracket {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1200px;
+    width: 100%;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+/*
+.cuartos .semis y .final
+*/
+.cuartos{
+    margin-top: 200px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.semis{
+    margin-top: 385px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.final{
+    margin-top: 450px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #ff4655;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.matchup {
+    background-color: #1e1e1e;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: right;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #ff4655;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #272727;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.team:hover {
+    background-color: #565656;
+    cursor: pointer;
+}
+
+.team img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.team span {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.score {
+    font-size: 18px;
+    color: #8fa3b0;
+
+}
+
+.cuartos .matchup, .semis .matchup, .final .matchup {
+    position: relative;
+}
+
+.cuartos .matchup:after, .semis .matchup:after, .final .matchup:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background-color: #ff4655;  
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+
+.semis .matchup:after {
+    height: 30px;
+}
+
+.final .matchup:after {
+    content: none;
+}
+
+.tournament-bracket .round:not(:last-child) {
+    margin-right: 50px;
+}
