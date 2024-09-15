@@ -1,0 +1,8 @@
+.bracket.swiss{
+    margin-top: 3000px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.round{
+    flex-shrink: 0;
+}

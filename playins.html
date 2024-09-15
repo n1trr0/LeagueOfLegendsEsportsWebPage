@@ -5,133 +5,405 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoL Worlds 2024 Playins stage</title>
     <link rel="stylesheet" href="playins.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tournamentHeader.css">
+    <link rel="stylesheet" href="matchups.css">
+    <link rel="stylesheet" href="teamsInfoBoxes.css">
 </head>
 <body>
     
-    <div class="stage-buttons">
-        <a href="playins.html"><button>PLAY-INS</button></a>
+    <div class="stage-buttons"> 
+        <a href="playins.html"><button class="currentStage">PLAY-INS</button></a>
         <a href="swiss.html"><button>SWISS</button></a>
         <a href="index.html"><button>KNOCKOUT</button></a>
     </div>
 
-    <div class="tournament-bracket">
-        <div class="round cuartos">
-            <h3>Round 1</h3>
-            <div class="matchup">
-                <div class="team won">
-                    <img src="/TeamLogos/MDK.png" alt="MAD Lions KOI Logo">
-                    <span>MAD Lions KOI</span>
-                    <span class="score">2</span>
+    <div class="content">                
+        <div class= "bracket upper">            
+            <div class="round cuartos">
+                <h2>Round 1</h2>
+                <div class="matchup">
+                    <div class="team won">
+                        <img src="/TeamLogos/MDK.png" alt="MAD Lions KOI Logo">
+                        <span>MAD Lions KOI</span>
+                        <span class="score">2</span>
+                    </div>
+                    <div class="team">
+                        <img src="/TeamLogos/VKE.png" alt="Vikings esports Logo">
+                        <span>Vikings esports</span>
+                        <span class="score">0</span>
+                    </div>
                 </div>
-                <div class="team">
-                    <img src="/TeamLogos/VKE.png" alt="Vikings esports Logo">
-                    <span>Vikings esports</span>
-                    <span class="score">0</span>
+                <div class="matchup">
+                    <div class="team">
+                        <img src="/TeamLogos/PSG.png" alt="PSG Talon Logo">
+                        <span>PSG Talon</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="team">
+                        <img src="/TeamLogos/PNG.png" alt="paiN Gaming Logo">
+                        <span>paiN Gaming</span>
+                        <span class="score">0</span>
+                    </div>
+                </div>
+                <div class="matchup">
+                    <div class="team">
+                        <img src="/TeamLogos/GAM.png" alt="GAM esports Logo">
+                        <span>GAM esports</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="team">
+                        <img src="/TeamLogos/SHG.png" alt="SHG Logo">
+                        <span>Fukuoka SoftBank HAWKS</span>
+                        <span class="score">0</span>
+                    </div>
+                </div>
+                <div class="matchup">
+                    <div class="team">
+                        <img src="/TeamLogos/100T.png" alt="100 Thieves Logo">
+                        <span>100 Thieves</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="team">
+                        <img src="/TeamLogos/R7.png" alt="Movistar R7 Logo">
+                        <span>Movistar R7</span>
+                        <span class="score">0</span>
+                    </div>
+                </div>
+                
+            </div>            
+            <div class="round semis">
+                <h2>Qualification match</h2>
+                <div class="matchup">
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
+                </div>
+                <div class="matchup">
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class= "bracket lower">
+            <div class="round cuartos">
+                <h2>Lower Bracket</h2>
+                <div class="matchup">
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
+                </div>
+                <div class="matchup">
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
                 </div>
             </div>
-            <div class="matchup">
-                <div class="team">
-                    <img src="/TeamLogos/PSG.png" alt="PSG Talon Logo">
-                    <span>PSG Talon</span>
-                    <span class="score">0</span>
+            <div class="round semis">
+                <h2>Qualification match loser's bracket</h2>
+                <div class="matchup">
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
                 </div>
-                <div class="team">
-                    <img src="/TeamLogos/PNG.png" alt="paiN Gaming Logo">
-                    <span>paiN Gaming</span>
-                    <span class="score">0</span>
+                <div class="matchup">
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="team">
+                        <span>TBA</span>
+                        <span class="score">0</span>
+                    </div>
                 </div>
             </div>
-            <div class="matchup">
-                <div class="team">
-                    <img src="/TeamLogos/GAM.png" alt="GAM esports Logo">
-                    <span>GAM esports</span>
-                    <span class="score">0</span>
+        </div>
+        <div class="teamsInfo">
+            <div class="team-card">
+                <div class="team-info-top">
+                    <span>MAD LIONS KOI</span>
                 </div>
-                <div class="team">
-                    <img src="/TeamLogos/SHG.png" alt="SHG Logo">
-                    <span>Fukuoka SoftBank HAWKS</span>
-                    <span class="score">0</span>
+                <div class="team-center">
+                    <div class="team-logo">
+                        <img src="TeamLogos/MDK.png" alt="MDK Logo">
+                    </div>
+                    <div class="team-members">
+                        <ul>
+                            <li>
+                                <img src="Flags/es.png" alt="ES Flag"> Myrwn
+                            </li>
+                            <li>
+                                <img src="Flags/es.png" alt="ES Flag"> Elyoya
+                            </li>
+                            <li>
+                                <img src="Flags/pl.png" alt="PL Flag"> Fresskowy
+                            </li>
+                            <li>
+                                <img src="Flags/es.png" alt="ES Flag"> Supa
+                            </li>
+                            <li>
+                                <img src="Flags/es.png" alt="ES Flag"> Alvaro
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="team-info-bottom">
+                    <p>LEC #3</p>
+                </div>        
             </div>
-            <div class="matchup">
-                <div class="team">
-                    <img src="/TeamLogos/100T.png" alt="100 Thieves Logo">
+            <div class="team-card">
+                <div class="team-info-top">
                     <span>100 Thieves</span>
-                    <span class="score">0</span>
                 </div>
-                <div class="team">
-                    <img src="/TeamLogos/R7.png" alt="Movistar R7 Logo">
-                    <span>Movistar R7</span>
-                    <span class="score">0</span>
+                <div class="team-center">
+                    <div class="team-logo">
+                        <img src="TeamLogos/100T.png" alt="100T Logo">
+                    </div>
+                    <div class="team-members">
+                        <ul>
+                            <li>
+                                <img src="Flags/ca.png" alt="CA Flag"> Sniper
+                            </li>
+                            <li>
+                                <img src="Flags/kr.png" alt="KR Flag"> River
+                            </li>
+                            <li>
+                                <img src="Flags/kr.png" alt="KR Flag"> Quid
+                            </li>
+                            <li>
+                                <img src="Flags/us.png" alt="US Flag"> Tomo
+                            </li>
+                            <li>
+                                <img src="Flags/au.png" alt="AU Flag"> Eyla
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="team-info-bottom">
+                    <p>LCS #3</p>
+                </div>        
             </div>
-            <h2>Lower Bracket</h2>
-            <div class="matchup">
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
+            <div class="team-card">
+                <div class="team-info-top">
+                    <span>PSG Talon</span>
                 </div>
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
+                <div class="team-center">
+                    <div class="team-logo">
+                        <img src="TeamLogos/PSG.png" alt="PSG Logo">
+                    </div>
+                    <div class="team-members">
+                        <ul>
+                            <li>
+                                <img src="Flags/tw.png" alt="TW Flag"> Azhi
+                            </li>
+                            <li>
+                                <img src="Flags/tw.png" alt="TW Flag"> JunJia
+                            </li>
+                            <li>
+                                <img src="Flags/tw.png" alt="TW Flag"> Maple
+                            </li>
+                            <li>
+                                <img src="Flags/tw.png" alt="TW Flag"> Betty
+                            </li>
+                            <li>
+                                <img src="Flags/tw.png" alt="TW Flag"> Woody
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="team-info-bottom">
+                    <p>APAC #1</p>
+                </div>        
             </div>
-            <div class="matchup">
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
+            <div class="team-card">
+                <div class="team-info-top">
+                    <span>GAM esports</span>
                 </div>
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
+                <div class="team-center">
+                    <div class="team-logo">
+                        <img src="TeamLogos/GAM.png" alt="GAM Logo">
+                    </div>
+                    <div class="team-members">
+                        <ul>
+                            <li>
+                                <img src="Flags/vn.png" alt="VN Flag"> Kiaya
+                            </li>
+                            <li>
+                                <img src="Flags/vn.png" alt="VN Flag"> Levi
+                            </li>
+                            <li>
+                                <img src="Flags/vn.png" alt="VN Flag"> Emo
+                            </li>
+                            <li>
+                                <img src="Flags/vn.png" alt="VN Flag"> EasyLove
+                            </li>
+                            <li>
+                                <img src="Flags/vn.png" alt="VN Flag"> Elio
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="team-info-bottom">
+                    <p>VN #1</p>
+                </div>        
             </div>
         </div>
-        <div class="round semis">
-            <h3>Qualification match</h3>
-            <div class="matchup">
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
+        <div class="teamsInfo">
+            <div class="team-card">
+                <div class="team-info-top">
+                    <span>Fukuoka SoftBank HAWKS</span>
                 </div>
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
+                <div class="team-center">
+                    <div class="team-logo">
+                        <img src="TeamLogos/SHG.png" alt="SHG Logo">
+                    </div>
+                    <div class="team-members">
+                        <ul>
+                            <li>
+                                <img src="Flags/jp.png" alt="JP Flag"> Evi
+                            </li>
+                            <li>
+                                <img src="Flags/kr.png" alt="KR Flag"> Forest
+                            </li>
+                            <li>
+                                <img src="Flags/kr.png" alt="KR Flag"> DasheR
+                            </li>
+                            <li>
+                                <img src="Flags/jp.png" alt="JP Flag"> Marble
+                            </li>
+                            <li>
+                                <img src="Flags/kr.png" alt="KR Flag"> Vsta
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-info-bottom">
+                    <p>APAC #2</p>
+                </div>        
+            </div>
+            <div class="team-card">
+                <div class="team-info-top">
+                    <span>Vikings esports</span>
+                </div>
+                <div class="team-center">
+                    <div class="team-logo">
+                        <img src="TeamLogos/VKE.png" alt="VKE Logo">
+                    </div>
+                    <div class="team-members">
+                        <ul>
+                            <li>
+                                <img src="Flags/vn.png" alt="VN Flag"> Nanaue
+                            </li>
+                            <li>
+                                <img src="Flags/vn.png" alt="VN Flag"> Gury
+                            </li>
+                            <li>
+                                <img src="Flags/vn.png" alt="VN Flag"> Kati
+                            </li>
+                            <li>
+                                <img src="Flags/vn.png" alt="VN Flag"> Shogun
+                            </li>
+                            <li>
+                                <img src="Flags/vn.png" alt="VN Flag"> Bie
+                            </li>
+                        </ul>
+                    </div>
+                </div>            
+                <div class="team-info-bottom">
+                    <p>VN #2</p>
                 </div>
             </div>
-            <div class="matchup">
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
-                </div>
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
-                </div>
+            <div class="team-card">
+                    <div class="team-info-top">
+                        <span>Movistar R7</span>
+                    </div>
+                    <div class="team-center">
+                        <div class="team-logo">
+                            <img src="TeamLogos/R7.png" alt="R7 Logo">
+                        </div>
+                        <div class="team-members">
+                            <ul>
+                                <li>
+                                    <img src="Flags/kr.png" alt="KR Flag"> Summit
+                                </li>
+                                <li>
+                                    <img src="Flags/pe.png" alt="PE Flag"> Oddie
+                                </li>
+                                <li>
+                                    <img src="Flags/kr.png" alt="KR Flag"> Keine
+                                </li>
+                                <li>
+                                    <img src="Flags/ar.png" alt="AR Flag"> Ceo
+                                </li>
+                                <li>
+                                    <img src="Flags/ar.png" alt="AR Flag"> Lyonz
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-info-bottom">
+                        <p>LATAM #1</p>
+                    </div>        
             </div>
-            <h1>Qualification match loser's bracket</h1>
-            <div class="matchup">
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
+            <div class="team-card">
+                <div class="team-info-top">
+                    <span>paiN Gaming</span>
                 </div>
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
+                <div class="team-center">
+                    <div class="team-logo">
+                        <img src="TeamLogos/PNG.png" alt="PNG Logo">
+                    </div>
+                    <div class="team-members">
+                        <ul>
+                            <li>
+                                <img src="Flags/kr.png" alt="KR Flag"> Wizer
+                            </li>
+                            <li>
+                                <img src="Flags/br.png" alt="BR Flag"> Carik
+                            </li>
+                            <li>
+                                <img src="Flags/br.png" alt="BR Flag"> dyNquedo
+                            </li>
+                            <li>
+                                <img src="Flags/br.png" alt="BR Flag"> TitaN
+                            </li>
+                            <li>
+                                <img src="Flags/kr.png" alt="KR Flag"> Kuri
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="matchup">
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
-                </div>
-                <div class="team">
-                    <span>TBA</span>
-                    <span class="score">0</span>
-                </div>
-            </div>
-        </div>
-    </div>
+                <div class="team-info-bottom">
+                    <p>BR #1</p>
+                </div>        
+        </div>        
+        </div>       
+    </div>   
 </body>
 </html>

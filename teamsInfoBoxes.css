@@ -1,0 +1,119 @@
+/* Defines the style of the team information boxes below a tournament bracket
+*/
+.team-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 244px;
+    height: 267px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #40474F;
+    color: #d4d4d4;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-info-top, .team-info-bottom {
+    width: 100%;
+    color: #d4d4d4;
+}
+
+.team-info-top {
+    min-height: 42px;
+    padding: 10px;
+    background-color: #394046;
+}
+
+.team-info-bottom {
+    padding: 10px;
+    margin-top: auto;
+    border-top: 1px solid #5b6167;
+    background-color: #40474F;
+}
+
+.team-info-top h3, .team-info-bottom p {
+    font-size: 14px;
+}
+
+.team-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.team-logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.team-logo img {
+    width: 200px;
+}
+
+.team-members {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.team-members ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team-members li {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    position: relative;
+}
+
+.team-members img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.team-card:hover .team-logo {
+    opacity: 0.1;
+}
+
+.team-card:hover .team-members {
+    display: flex;
+}
+
+hr {
+    width: 80%;
+    margin: 5px 0;
+    border: 0;
+    border-top: 1px solid #8f99a3;
+}
+
+.teamsInfo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    padding: 20px;
+    background-color: #2F3337;
+}

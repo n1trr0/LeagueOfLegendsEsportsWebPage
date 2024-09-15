@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #0f1519;
+    background-color: #292E32;
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -15,58 +15,15 @@ body {
     overflow-y: auto;
 }
 
-.stage-buttons {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #1e1e1e;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-}
-
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ff4655;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff2a40;
-}
-.tournament-bracket {
-    display: flex;
-    justify-content: space-between; 
-    max-width: 900px;
-    width: 100%;
-    margin-top: 400px;  
-    padding: 20px;
-    overflow-x: auto;
-}
-.round {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-}
-
 .cuartos{
-    margin-top: 100px;
     flex-wrap: wrap;
     display: flex;
 }
 
 .semis{
-    margin-top: 250px;
     flex-wrap: wrap;
     display: flex;
+    justify-content: space-around;
 }
 .team:hover {
     background-color: #565656;
@@ -86,38 +43,12 @@ h2 {
     font-size: 20px;
 }
 
-h1 {
-    margin-top: 277px;
-    margin-bottom: 5px;
-    color: #ffffff;
-    font-size: 20px;
-}
-
-.matchup {
-    background-color: #1e1e1e;
-    margin: 20px 0;
-    padding: 15px;
-    width: 100%;
-    text-align: right;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.team img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-.team span {
-    flex: 1;
-    margin-left: 5px;
-    white-space: nowrap;
-    align-items: left;  
-}
-
 
 
 .cuartos .matchup, .semis .matchup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -125,8 +56,7 @@ h1 {
     content: '';
     position: absolute;
     width: 2px;
-    height: 40px;
-    background-color: #ff4655;  
+    height: 40px;  
     top: 50%;
     left: 100%;
     transform: translateY(-50%);
