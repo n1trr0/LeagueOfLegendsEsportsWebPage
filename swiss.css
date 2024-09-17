@@ -1,8 +1,12 @@
 .bracket.swiss{
-    margin-top: 3000px;
+    margin-top: 2000px;
     overflow-x: auto;
     white-space: nowrap;
 }
 .round{
     flex-shrink: 0;
+    justify-content: space-around;
+}
+.round.ronda5, .round.ronda4{
+    justify-content: center;
 }
